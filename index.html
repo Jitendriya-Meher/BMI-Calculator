@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="cont">
+
+        <h1>
+            BMI Calculator
+        </h1>
+        <div class="form">
+            <label>
+                Weight
+            </label>
+            <div class="contin">
+                
+                <input type="number" id="weightInputKg"
+                placeholder="Enter your weight in Kg">
+                <input type="number" id="weightInputPound"
+                placeholder="Enter your weight in Pound">
+
+                <select name="weight" id="weight">
+                    <option value="kg">
+                        Kg
+                    </option>
+                    <option value="pound">
+                        Pound
+                    </option>
+                </select>
+            </div>
+
+            <label>
+                Height
+            </label>
+            <div class="contin">
+
+                <input type="number" id="heightInputMt"
+                placeholder="Enter your height in Meter">
+                <input type="number" id="heightInputCm"
+                placeholder="Enter your height in centimeter">
+
+                <input type="number" id="heightInputFt"
+                placeholder="Feet">
+                <input type="number" id="heightInputIn"
+                placeholder="Inch">
+
+                <select name="height" id="height">
+                    <option value="meter">
+                        Meter
+                    </option>
+                    <option value="centimeter">
+                        centimeter
+                    </option>
+                    <option value="feet">
+                        Feet
+                    </option>
+                </select>
+            </div>
+
+            <button onclick={calculate()}>
+                Calculate
+            </button>
+        </div>
+
+
+        <div class="result">
+            <h2>Your BMI is : 19</h2>
+            <p class="status">You need to gain weight</p>
+
+            <div class="measurements">
+                <p>Underweight = &gt; 18.5</p>
+                <p>Normal weight = 18.5–24.9</p>
+                <p>Overweight = 25–29.9</p>
+                <p>Obesity = BMI of 30 or greater</p>
+            </div>
+
+            <button onclick="window.location.reload();">Try Again</button>
+        </div>
+
+    </div>
+
+
+    
+</body>
+
+<script src="./script.js"></script>
+
+</html> 
